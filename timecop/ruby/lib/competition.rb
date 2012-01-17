@@ -22,6 +22,8 @@ class Competition
     entry
   end
 
+  protected
+
   def timely?(time=Time.now)
     !too_early?(time) && !too_late?(time)
   end
