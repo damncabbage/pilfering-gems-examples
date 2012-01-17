@@ -1,6 +1,6 @@
 # "Pilfering Gems" Examples
 
-These are the examples from the short run of blog posts showing how to cherry-pick the good stuff (libraries, techniques, whatever) for your PHP work.
+These are the examples from the short run of blog posts showing how to cherry-pick the good stuff from Ruby (libraries, techniques, whatever) for your PHP work.
 
 The blog posts:
 
