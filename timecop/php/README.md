@@ -55,7 +55,7 @@ Time: 0 seconds, Memory: 4.75Mb
 OK (3 tests, 5 assertions)
 ```
 
-### Poking Around
+## Poking Around
 
 The test cases are in `tests/CompetitionTest.php`. The `Competition` and `Entry` classes themselves are under `lib`.
 
