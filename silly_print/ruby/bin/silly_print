@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+BASE_PATH = File.expand_path('../lib', File.dirname(__FILE__))
+
+# Load the SillyPrint libraries; in reality you'd be using an autoloader for this.
+Dir["#{BASE_PATH}/*.rb", "#{BASE_PATH}/silly_print/**/*.rb"].each {|f| require f }
+
+# Now load all the plugins. (This is separate from the above, as in reality you'd
+# probably have the plugin loading as a separate step to your library autoloading.)
+Dir["#{BASE_PATH}/plugins/**/*.rb"].each {|f| require f }
+
+if ARGV[0]
+  if ARGV[1]
+    SillyPrint::print_message(ARGV[0], ARGV[1])
+  else
+    SillyPrint::print_message(ARGV[0])
+  end
+
+else
+	puts "Usage: {$argv[0]} \"Your silly message.\" [printer]\n";
+	puts "   eg. silly_print \"Moo.\" cow\n\n";
+	exit(1)
+end
