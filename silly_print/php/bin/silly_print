@@ -1,0 +1,38 @@
+#!/usr/bin/env php
+<?php
+
+define('BASE_PATH', realpath(dirname(__FILE__).'/../lib'));
+
+// Load the SillyPrint libraries; in reality you'd be using an autoloader for this.
+require_once BASE_PATH.'/SillyPrint.php';
+foreach (glob(BASE_PATH.'/SillyPrint/Printers/*php') as $file) {
+	require_once $file;
+}
+
+// Load all the plugins
+foreach (glob(BASE_PATH.'/plugins/*php') as $file) {
+	require_once $file;
+}
+
+// Define a very basic autoloader to map \Name\Space\Class to Name/Space/Class.php
+// In reality, you'd likely be using your framework's autoloader (such as Zend_Loader_Autoloader).
+//spl_autoload_register(function($class){
+//	$parts = explode('\\', $class);
+//	require_once BASE_PATH . '/' . implode('/', $parts) . '.php';
+//});
+
+
+
+
+if (!empty($argv[1])) {
+	if (!empty($argv[2])) {
+		SillyPrint\printMessage($argv[1], $argv[2]);
+	} else {
+		SillyPrint\printMessage($argv[1]);
+	}
+
+} else {
+	echo "Usage: {$argv[0]} \"Your silly message.\" [printer]\n";
+	echo "   eg. silly_print \"Moo.\" cow\n\n";
+	exit(1);
+}
