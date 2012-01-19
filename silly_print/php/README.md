@@ -30,6 +30,4 @@ bin/silly_print "I am not." elephant
 
 ## Poking Around
 
-The printers themselves are under `lib/SillyPrint/Printers`, and the "external" plugins are loaded from `lib/plugins`.
-
-Enjoy!
+The printers themselves are under `lib/SillyPrint/Printers`, and the "external" plugins are loaded from `lib/plugins`. The function that does the dynamic class lookup is in `lib/SillyPrint.php`.
