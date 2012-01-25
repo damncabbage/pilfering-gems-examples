@@ -2,11 +2,11 @@
 
 ## Environment
 
-Set up your local environment with Ruby; 1.9.2+ is required.
+Set up your local environment with Ruby; 1.8.7 is acceptable, but 1.9.2+ is preferred.
 
-To find out if you have Ruby, run `ruby -v` in a console; if you get 1.9.2 or 1.9.3 back, you're fine. If not, you either need to [http://beginrescueend.com/rvm/install/](install RVM), or just `apt-get install ruby1.9.1` if you're using Debian/Ubuntu and feeling really lazy.
+To find out if you have Ruby, run `ruby -v` in a console; if you get 1.8.7, 1.9.2 or 1.9.3 back, you're fine. If not, you either need to [http://beginrescueend.com/rvm/install/](install RVM), or just `apt-get install ruby1.9.1` if you're using Debian/Ubuntu and feeling really lazy.
 
-(OS X has Ruby 1.8.7 by default, but can be upgraded by [following this guide and installing it via homebrew](http://www.frederico-araujo.com/2011/07/30/installing-rails-on-os-x-lion-with-homebrew-rvm-and-mysql/). I can't help you if you're running Windows, sorry, but you should maybe try [RubyInstaller](http://rubyinstaller.org/).)
+(OS X has Ruby 1.8.7 by default, which is fine; if you want to upgrade anyway you should [follow this guide and install it via homebrew](http://www.frederico-araujo.com/2011/07/30/installing-rails-on-os-x-lion-with-homebrew-rvm-and-mysql/). I can't help you if you're running Windows, sorry, but you should maybe try [RubyInstaller](http://rubyinstaller.org/).)
 
 ## Libraries
 
