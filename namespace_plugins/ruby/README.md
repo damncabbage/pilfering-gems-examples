@@ -1,4 +1,4 @@
-# Timecop: Ruby
+# SillyPrint: Ruby
 
 ## Environment
 
